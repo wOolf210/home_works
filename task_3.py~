@@ -1,0 +1,10 @@
+def access_element(arr, index):
+    try:
+        return arr[index]
+    except IndexError:
+        print("Ошибка: индекс выходит за пределы массива!")
+
+
+if __name__ == "__main__":
+    arr = [1, 2, 3, 4]
+    print(access_element(arr, 4))
